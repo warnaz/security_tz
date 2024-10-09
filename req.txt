@@ -1,0 +1,17 @@
+feedparser
+sqlalchemy
+aiohttp
+aiogram
+pydantic
+pydantic_settings
+asyncpg
+pika
+redis
+alembic
+python-dotenv
+pyuseragents
+fake_useragent
+loguru
+apscheduler
+aio_pika
+psycopg2-binary

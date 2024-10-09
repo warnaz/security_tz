@@ -1,0 +1,24 @@
+# Использование 304 заголовка, так как некоторые rss feed неправильно работают с кешем
+## some rss feed implement http caching improperly :(
+# if resp.status == 200 and int(resp.headers.get('Content-Length', '1')) == 0:
+#     ret.status = 304
+#     # ret.msg = f'"Content-Length" is 0'
+#     return ret
+
+# if resp.status == 304:
+#     # ret.msg = f'304 Not Modified'
+#     return ret  # 304 Not Modified, feed not updated
+
+
+# Использовать хеши для определения, что изменилось, а что нет. Это позволяет не обрабатывать старую инфу
+
+
+# Для user_id нужно использовать BigInt для телеграм id 
+
+# Использовать генераторы, чтобы получать из Redis инфу, чтобы еще больше не нагружать оперативку
+
+
+# Можно тесты добавить
+
+# Добавить объекты самых популярных источников в redis 
+ 
